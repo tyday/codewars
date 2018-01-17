@@ -61,15 +61,15 @@ def validSolution(board):
 
     #divide the board into 9 sections. Make sure each section is made up of unique values
     # Row One
-    for x in range(0,6,3):
+    for x in range(0,7,3):
         if check_ninth(x,0,board) == False:
             return False
     #Row Two
-    for x in range(0,6,3):
+    for x in range(0,7,3):
         if check_ninth(x,3,board) == False:
             return False
     #Row Three
-    for x in range(0,6,3):
+    for x in range(0,7,3):
         if check_ninth(x,6,board) == False:
             return False
     return True       
